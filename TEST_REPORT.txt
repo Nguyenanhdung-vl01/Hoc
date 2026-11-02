@@ -1,0 +1,36 @@
+STUDYSPACE BLOOM — BÁO CÁO KIỂM TRA BẢN PHÁT HÀNH
+Ngày kiểm tra: 02/11/2026
+
+1. TÍNH TOÀN VẸN GÓI TỆP
+- Tất cả tài nguyên nội bộ được tham chiếu trong HTML đều tồn tại.
+- Bộ favicon đầy đủ: SVG vector, PNG 32 px, PNG 512 px, Apple touch icon 180 px và ICO đa kích thước 16/32/48/64 px.
+- Không còn tiêu đề hoặc tên tệp mang số phiên bản phát hành.
+- Không còn ảnh xem trước của các lượt thiết kế cũ trong gói cuối.
+- ZIP được kiểm tra CRC sau khi đóng gói.
+
+2. MÃ NGUỒN VÀ TƯƠNG THÍCH
+- JavaScript ứng dụng giữ nguyên byte-for-byte so với mã nguồn đầu vào của lượt hoàn thiện này.
+- APP_VERSION dữ liệu vẫn là 17; không thay đổi schema lưu trữ.
+- Lượt hoàn thiện này tập trung vào tên/nhận diện, định danh CSS, favicon và tài liệu đi kèm.
+- Đã chạy kiểm tra cú pháp JavaScript bằng Node.js: đạt.
+- 36 thẻ style có cặp mở/đóng cân bằng.
+- CSS được phân tích bằng tinycss2: 4.141 quy tắc/at-rule, 0 lỗi phân tích.
+- Không có ID HTML bị trùng.
+
+3. KIỂM TRA TRÌNH DUYỆT
+- Khung ứng dụng và vùng nội dung được dựng đúng.
+- Bảng lệnh nhanh mở được; tìm kiếm lệnh trả kết quả.
+- Chế độ tập trung bật/tắt được.
+- Chuyển sáng/tối được.
+- Hộp thoại tạo dự án mở được.
+- Không ghi nhận lỗi JavaScript không được bắt trong lượt kiểm tra giao diện cô lập.
+- Kiểm tra responsive ở 19 chiều rộng: 320, 360, 375, 390, 414, 430, 480, 520, 560, 720, 768, 820, 980, 1024, 1050, 1280, 1300, 1365 và 1440 px; không ghi nhận tràn ngang.
+
+4. GIỚI HẠN KIỂM THỬ
+- Chromium trong môi trường cô lập không cho phép truy cập localStorage trên tài liệu about:blank; do đó không dùng lượt kiểm tra cô lập này để khẳng định lưu trữ hoặc phục hồi dữ liệu cá nhân trên hồ sơ trình duyệt thật.
+- Chưa thử khôi phục dữ liệu cá nhân thực tế hoặc các bộ media lớn.
+- Ứng dụng lưu dữ liệu cục bộ; không có backend đồng bộ đám mây giữa nhiều thiết bị.
+- Một số thư viện ngoài có thể được tải từ CDN và cần Internet.
+
+KHUYẾN NGHỊ
+Xuất JSON sao lưu toàn hệ thống từ bản đang dùng trước khi chuyển sang thư mục này. Sau khi nhập dữ liệu, kiểm tra ngẫu nhiên dự án, trang vở, câu hỏi, lịch, tệp đính kèm và các liên kết trước khi xóa bản cũ.

@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-labelledby="title">
+  <title id="title">StudySpace BLOOM</title>
+  <defs>
+    <linearGradient id="bg" x1="34" y1="26" x2="482" y2="490" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#4f79ee"/>
+      <stop offset=".52" stop-color="#317bc9"/>
+      <stop offset="1" stop-color="#159f98"/>
+    </linearGradient>
+    <linearGradient id="page" x1="92" y1="190" x2="412" y2="410" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#fff"/>
+      <stop offset="1" stop-color="#eaf4ff"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="210" y1="62" x2="305" y2="199" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#fff1b6"/>
+      <stop offset="1" stop-color="#ffd16a"/>
+    </linearGradient>
+    <clipPath id="clip"><rect x="8" y="8" width="496" height="496" rx="92"/></clipPath>
+  </defs>
+  <g clip-path="url(#clip)">
+    <rect x="8" y="8" width="496" height="496" rx="92" fill="url(#bg)"/>
+    <path d="M34 178C116 60 260 40 448 93c-70-6-145 16-214 58-71 44-139 62-200 62Z" fill="#fff" opacity=".10"/>
+    <path d="M22 365c100-61 190-76 280-42 69 26 132 26 204-7v188H8V365Z" fill="#063f79" opacity=".08"/>
+    <!-- Open book -->
+    <path d="M82 216c55-34 116-34 174-1v190c-58-33-119-34-174 0V216Z" fill="url(#page)"/>
+    <path d="M430 216c-55-34-116-34-174-1v190c58-33 119-34 174 0V216Z" fill="url(#page)"/>
+    <path d="M256 214v191" stroke="#3974d8" stroke-width="19" stroke-linecap="round"/>
+    <path d="M119 273c35-10 69-8 103 5M119 323c36-9 70-7 103 6M393 273c-35-10-69-8-103 5M393 323c-36-9-70-7-103 6" fill="none" stroke="#a5c6f5" stroke-width="11" stroke-linecap="round"/>
+    <!-- Bloom / sprout -->
+    <path d="M256 147c-37-32-29-73 0-103 29 30 37 71 0 103Z" fill="url(#gold)"/>
+    <path d="M248 151c-46 17-76-9-78-48 40-11 73 3 78 48Z" fill="#ffda83"/>
+    <path d="M264 151c46 17 76-9 78-48-40-11-73 3-78 48Z" fill="#ffd178"/>
+    <path d="M256 145v54" stroke="#ffe29a" stroke-width="17" stroke-linecap="round"/>
+    <circle cx="256" cy="197" r="14" fill="#ffe7a5"/>
+    <rect x="8" y="8" width="496" height="496" rx="92" fill="none" stroke="#fff" stroke-opacity=".28" stroke-width="3"/>
+  </g>
+</svg>
